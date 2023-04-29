@@ -42,7 +42,7 @@
         }
         if (correctAnswer === "") {
           alert("Please select an answer for this question.");
-        } else if (correctAnswer === "b") {
+        } else if (correctAnswer === "true") {
           alert("Correct!");
         } else {
           alert("Incorrect. Please review the lesson and try again.");
@@ -52,16 +52,18 @@
 
     <form>
       <fieldset>
-        <legend>What are phishing links?</legend>
+        <legend>What is a common security problem associated with using public Wi-Fi networks?</legend>
         <label>
-          <input type="radio" name="q1" value="a" />Links to legitimate websites
+          <input type="radio" name="q1" value="false" />Slow internet speeds
         </label>
         <label>
-          <input type="radio" name="q1" value="b" />Fake websites or emails
-          designed to steal personal information
+          <input type="radio" name="q1" value="false" />High costs
         </label>
         <label>
-          <input type="radio" name="q1" value="c" />Links to online quizzes
+          <input type="radio" name="q1" value="true" />Man-in-the-Middle Attacks
+        </label>
+        <label>
+          <input type="radio" name="q1" value="false" />Limited availability
         </label>
         <br />
         <button type="button" onclick="checkAnswer('q1')">Submit Answer</button>
@@ -70,20 +72,16 @@
       <fieldset>
         <legend>What are some ways to identify phishing links?</legend>
         <label>
-          <input type="checkbox" name="q2" value="a" />The URL is different from
-          the legitimate website
+          <input type="checkbox" name="q2" value="false" />Avoid accessing sensitive information on public Wi-Fi networks
         </label>
         <label>
-          <input type="checkbox" name="q2" value="b" />The website has the lock
-          icon in the address bar
+          <input type="checkbox" name="q2" value="false" />Install antivirus software and keep it up-to-date
         </label>
         <label>
-          <input type="checkbox" name="q2" value="c" />The email contains
-          spelling or grammar errors
+          <input type="checkbox" name="q2" value="false" />Use a VPN (Virtual Private Network)
         </label>
         <label>
-          <input type="checkbox" name="q2" value="d" />The email contains urgent
-          language or threatens consequences
+          <input type="checkbox" name="q2" value="true" />All of the above
         </label>
         <br />
         <button type="button" onclick="checkAnswer('q2')">Submit Answer</button>
@@ -92,21 +90,20 @@
       <fieldset>
         <legend>What should you do when using public Wi-Fi?</legend>
         <label>
-          <input type="radio" name="q3" value="a" />Use public Wi-Fi only for
-          non-sensitive activities
+          <input type="radio" name="q3" value="false" />Increased internet speeds
         </label>
         <label>
-          <input type="radio" name="q3" value="b" />Use a VPN to encrypt your
-          internet connection
+          <input type="radio" name="q3" value="false" />Better connection stability
         </label>
         <label>
-          <input type="radio" name="q3" value="c" />Use public Wi-Fi for all
-          online activities
+          <input type="radio" name="q3" value="true" />Data interception by hackers
+        </label>
+        <label>
+          <input type="radio" name="q3" value="false" />Automatic security updates
         </label>
         <br />
         <button type="button" onclick="checkAnswer('q3')">Submit Answer</button>
       </fieldset>
-
-      <input type="submit" value="Submit Quiz" />
     </form>
+    
 </html>

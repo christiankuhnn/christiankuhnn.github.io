@@ -2,6 +2,78 @@
 <html>
   <head>
     <title>Internet Security Training - Lesson 2</title>
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+        }
+        header {
+          background-color: #333;
+          color: white;
+          padding: 20px;
+        }
+        h1 {
+          margin: 0;
+          font-size: 36px;
+        }
+        nav ul {
+          margin: 0;
+          padding: 0;
+          list-style-type: none;
+        }
+        nav li {
+          display: inline;
+          margin-right: 10px;
+        }
+        nav li a {
+          color: white;
+          text-decoration: none;
+          font-weight: bold;
+          font-size: 18px;
+        }
+        main {
+          padding: 20px;
+        }
+        h2 {
+          font-size: 24px;
+          margin-top: 40px;
+        }
+        ul {
+          margin-top: 10px;
+        }
+        li {
+          margin-bottom: 10px;
+        }
+        h3 {
+          font-size: 18px;
+          margin-top: 40px;
+        }
+        div form {
+          margin-top: 10px;
+        }
+        input[type="text"] {
+          padding: 5px;
+          font-size: 18px;
+        }
+        button {
+          padding: 5px 10px;
+          font-size: 18px;
+          background-color: #333;
+          color: white;
+          border: none;
+          cursor: pointer;
+        }
+        button:hover {
+          background-color: #666;
+        }
+        footer {
+          background-color: #333;
+          color: white;
+          padding: 20px;
+          text-align: center;
+        }
+      </style>
   </head>
   <body>
     <header>
@@ -25,6 +97,14 @@
       </ul>
       <h2>Practice Activity</h2>
       <p>Take a moment to think about your current passwords. Do they follow the tips listed above? If not, it's time to update them. Use a password manager to generate new, unique passwords for each of your accounts.</p>
+      <h3>Has Your Password Been Breached</h3>
+      <p>Enter your password below and see if it has been in a previous data breach</p>
+      <div>
+		<form action="https://haveibeenpwned.com/Passwords" method="post">
+			<input type="text" name="password" placeholder="Enter password">
+			<button type="submit">Check</button>
+		</form>
+	</div>
     </main>
     <footer>
       <p>&copy; 2023 Internet Security Training</p>

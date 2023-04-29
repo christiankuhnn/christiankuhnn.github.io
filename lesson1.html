@@ -1,18 +1,249 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Internet Security Training - Lesson 1</title>
-</head>
-<body>
-	<h1>Lesson 1: Public Wi-Fi</h1>
-	<p>Public Wi-Fi networks are a convenient way to access the internet when you're out and about, but they also come with security risks. Hackers can exploit the vulnerabilities of public Wi-Fi networks to steal sensitive information, such as passwords, credit card details, and personal data. In this article, we'll discuss some of the common security issues associated with public Wi-Fi networks and offer tips on how to stay safe.</p>
-	<p>Here are some Security Issues of Public Wi-Fi:</p>
-	<ul>
-		<li>Man-in-the-Middle (MITM) Attacks</li>
-		<li>Malware Infections</li>
-		<li>Rogue Access Points</li>
-		<li>Unencrypted Data</li>
-	</ul>
-	<p>In conclusion, public Wi-Fi networks can be a security risk, but by taking the necessary precautions, you can protect your personal information and stay safe online. Remember to use encryption technologies, verify the legitimacy of Wi-Fi hotspots, and avoid accessing sensitive information when connected to public Wi-Fi. Stay safe and secure!</p>
-</body>
+  <head>
+    <title>Internet Security Training - Lesson 1</title>
+  </head>
+  <body>
+
+
+    <!-- <script>
+      function checkAnswer() {
+        var answer = document.getElementById("answer").value;
+        var result = document.getElementById("result");
+
+        if (answer.toLowerCase() === "public") {
+          result.innerText = "Correct!";
+          result.style.color = "green";
+        } else {
+          result.innerText = "Incorrect. Try again.";
+          result.style.color = "red";
+        }
+      }
+    </script>
+
+    <form>
+      <fieldset>
+        <legend>What is the main risk of using public WiFi?</legend>
+        <label>
+          <input type="radio" name="q1" value="a" />It's slower than private
+          WiFi
+        </label>
+        <label>
+          <input type="radio" name="q1" value="b" />It's more expensive than
+          private WiFi
+        </label>
+        <label>
+          <input type="radio" name="q1" value="c" />It's less secure than
+          private WiFi
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>How can you protect yourself when using public WiFi?</legend>
+        <label> <input type="checkbox" name="q2" value="a" />Use a VPN </label>
+        <label>
+          <input type="checkbox" name="q2" value="b" />Turn off WiFi when not in
+          use
+        </label>
+        <label>
+          <input type="checkbox" name="q2" value="c" />Only visit secure
+          websites
+        </label>
+        <label>
+          <input type="checkbox" name="q2" value="d" />Share personal
+          information with strangers
+        </label>
+        <input type="text" id="answer2" />
+        <button type="button" onclick="checkAnswer2()">Submit</button>
+      </fieldset>
+
+      <fieldset>
+        <legend>
+          What is the name of the wireless technology commonly used in public
+          WiFi?
+        </legend>
+        <input type="text" id="answer" />
+        <button type="button" onclick="checkAnswer()">Submit</button>
+        <p id="result"></p>
+      </fieldset>
+
+      <input type="submit" value="Submit Quiz" />
+    </form>
+
+    <script> -->
+      //   function RevealAnswer() {
+      //     const [visible, setVisible] = useState < boolean > false;
+
+      //     function changeVisibility() {
+      //       // Set visible to be the logical opposite of its previous value
+      //       setVisible(!visible);
+      //     }
+      //   }
+      function onclicks() {
+        var msg = document.getElementById("msg");
+        msg.innerText = "it worked";
+      }
+    </script>
+
+    <script>
+      window.onload = function () {
+        var button = document.getElementById("answerButton");
+        button.addEventListener("click", function () {
+          var answer = document.getElementById("answer");
+          answer.style.display = "block";
+        });
+      };
+    </script>
+
+    <form>
+      <fieldset>
+        <legend>What are phishing links?</legend>
+        <label>
+          <input type="radio" name="q1" value="a" />Links to legitimate websites
+        </label>
+        <label>
+          <input type="radio" name="q1" value="b" />Fake websites or emails
+          designed to steal personal information
+        </label>
+        <label>
+          <input type="radio" name="q1" value="c" />Links to online quizzes
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>What are some ways to identify phishing links?</legend>
+        <label>
+          <input type="checkbox" name="q2" value="a" />The URL is different from
+          the legitimate website
+        </label>
+        <label>
+          <input type="checkbox" name="q2" value="b" />The website has the lock
+          icon in the address bar
+        </label>
+        <label>
+          <input type="checkbox" name="q2" value="c" />The email contains
+          spelling or grammar errors
+        </label>
+        <label>
+          <input type="checkbox" name="q2" value="d" />The email contains urgent
+          language or threatens consequences
+        </label>
+      </fieldset>
+
+      <input type="submit" value="Submit Quiz" />
+    </form>
+
+    <body>
+      <h1>Question:</h1>
+      <p>What is the capital of France?</p>
+      <button id="answerButton">Click for answer</button>
+      <p id="answer" style="display: none">The capital of France is Paris.</p>
+    </body>
+
+    <h1>Lesson 1: Public Wi-Fi</h1>
+    <p>
+      Public Wi-Fi networks are a convenient way to access the internet when
+      you're out and about, but they also come with security risks. Hackers can
+      exploit the vulnerabilities of public Wi-Fi networks to steal sensitive
+      information, such as passwords, credit card details, and personal data. In
+      this article, we'll discuss some of the common security issues associated
+      with public Wi-Fi networks and offer tips on how to stay safe.
+    </p>
+    <p>Here are some Security Issues of Public Wi-Fi:</p>
+    <ul>
+      <li>Man-in-the-Middle (MITM) Attacks</li>
+      <li>Malware Infections</li>
+      <li>Rogue Access Points</li>
+      <li>Unencrypted Data</li>
+    </ul>
+    <button id="testbtn" onclick="onclicks()">Click me</button>
+
+
+    <p>
+      In conclusion, public Wi-Fi networks can be a security risk, but by taking
+      the necessary precautions, you can protect your personal information and
+      stay safe online. Remember to use encryption technologies, verify the
+      legitimacy of Wi-Fi hotspots, and avoid accessing sensitive information
+      when connected to public Wi-Fi. Stay safe and secure!
+    </p>
+    <div id="msg"></div>
+  </body>
+      <script>
+      function checkAnswer(fieldsetName) {
+        var radios = document.getElementsByName(fieldsetName);
+        var correctAnswer = "";
+        for (var i = 0; i < radios.length; i++) {
+          if (radios[i].checked) {
+            correctAnswer = radios[i].value;
+          }
+        }
+        if (correctAnswer === "") {
+          alert("Please select an answer for this question.");
+        } else if (correctAnswer === "b") {
+          alert("Correct!");
+        } else {
+          alert("Incorrect. Please review the lesson and try again.");
+        }
+      }
+    </script>
+
+    <form>
+      <fieldset>
+        <legend>What are phishing links?</legend>
+        <label>
+          <input type="radio" name="q1" value="a" />Links to legitimate websites
+        </label>
+        <label>
+          <input type="radio" name="q1" value="b" />Fake websites or emails
+          designed to steal personal information
+        </label>
+        <label>
+          <input type="radio" name="q1" value="c" />Links to online quizzes
+        </label>
+        <br />
+        <button type="button" onclick="checkAnswer('q1')">Submit Answer</button>
+      </fieldset>
+
+      <fieldset>
+        <legend>What are some ways to identify phishing links?</legend>
+        <label>
+          <input type="checkbox" name="q2" value="a" />The URL is different from
+          the legitimate website
+        </label>
+        <label>
+          <input type="checkbox" name="q2" value="b" />The website has the lock
+          icon in the address bar
+        </label>
+        <label>
+          <input type="checkbox" name="q2" value="c" />The email contains
+          spelling or grammar errors
+        </label>
+        <label>
+          <input type="checkbox" name="q2" value="d" />The email contains urgent
+          language or threatens consequences
+        </label>
+        <br />
+        <button type="button" onclick="checkAnswer('q2')">Submit Answer</button>
+      </fieldset>
+
+      <fieldset>
+        <legend>What should you do when using public Wi-Fi?</legend>
+        <label>
+          <input type="radio" name="q3" value="a" />Use public Wi-Fi only for
+          non-sensitive activities
+        </label>
+        <label>
+          <input type="radio" name="q3" value="b" />Use a VPN to encrypt your
+          internet connection
+        </label>
+        <label>
+          <input type="radio" name="q3" value="c" />Use public Wi-Fi for all
+          online activities
+        </label>
+        <br />
+        <button type="button" onclick="checkAnswer('q3')">Submit Answer</button>
+      </fieldset>
+
+      <input type="submit" value="Submit Quiz" />
+    </form>
 </html>

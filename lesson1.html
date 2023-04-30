@@ -59,7 +59,7 @@
 
         var summary = "Results:\n";
         for (var i = 0; i < results.length; i++) {
-          summary += "Question " + results[i].question + ": " + (results[i].answer ? "Correct" : "Incorrect") + "\n";
+          summary = summary + results[i].question + ": " + (results[i].answer ? "Correct" : "Incorrect") + "\n";
         }
         alert(summary);
 

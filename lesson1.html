@@ -32,6 +32,8 @@
     <div id="msg"></div>
   </body>
       <script>
+      var results = [];
+
       function checkAnswer(fieldsetName) {
         var radios = document.getElementsByName(fieldsetName);
         var correctAnswer = "";
@@ -44,10 +46,32 @@
           alert("Please select an answer for this question.");
         } else if (correctAnswer === "true") {
           alert("Correct!");
+          results.push({ question: fieldsetName, answer: true });
         } else {
           alert("Incorrect. Please review the lesson and try again.");
+          results.push({ question: fieldsetName, answer: false });
         }
       }
+
+      function showSummary() {
+        var correctAnswers = 0;
+        var totalQuestions = results.length;
+
+        var summary = "Results:\n";
+        for (var i = 0; i < results.length; i++) {
+          summary += "Question " + results[i].question + ": " + (results[i].answer ? "Correct" : "Incorrect") + "\n";
+        }
+        alert(summary);
+
+        for (var i = 0; i < totalQuestions; i++) {
+          if (results[i].answer) {
+            correctAnswers++;
+          }
+        }
+        var summary = "You answered " + correctAnswers + " out of " + totalQuestions + " questions correctly.";
+        alert(summary);
+      }
+
     </script>
 
     <form>
@@ -109,4 +133,6 @@
       </fieldset>
     </form>
     
+    <button type="button" onclick="showSummary()">Show Summary</button>
+
 </html>
